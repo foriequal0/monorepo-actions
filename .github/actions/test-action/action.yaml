@@ -1,0 +1,9 @@
+name: 'background-run'
+description: |
+  Start background process
+
+runs:
+  using: 'node20'
+  pre: _pre.mjs
+  main: _pre.mjs
+  post: _pre.mjs
