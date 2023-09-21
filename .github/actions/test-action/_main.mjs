@@ -1,6 +1,8 @@
 import * as child_process from "node:child_process";
+import * as path from "node:path";
 
-child_process.exec("env; echo main; npm version;", (error, stdout, stderr) => {
+console.log(path.resolve());
+child_process.exec("pwd; env; echo main; npm version;", (error, stdout, stderr) => {
   if (error) {
     console.error(`exec error: ${error}`);
     return;
