@@ -4,6 +4,5 @@ description: |
 
 runs:
   using: 'node20'
-  pre: _pre.mjs
-  main: _pre.mjs
-  post: _pre.mjs
+  main: _main.mjs
+  post: _main.mjs
