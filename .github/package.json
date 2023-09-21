@@ -1,0 +1,4 @@
+{
+  "name": "monorepo-actions",
+  "workspaces": ["actions/*", "packages/*"]
+}

@@ -3,6 +3,7 @@ description: |
   Start background process
 
 runs:
-  using: 'node20'
-  main: _main.mjs
-  post: _main.mjs
+  using: 'node24'
+  pre: _pre.ts
+  main: _main.ts
+  post: _main.ts

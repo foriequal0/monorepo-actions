@@ -1,0 +1,14 @@
+name: 'setup-monorepo-actions'
+description: |
+  Setup monorepo actions environment
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/setup-node@v5
+      with:
+        node-version: ">=24"
+    - name: Populate monorepo actions
+      run: npm install --ci
+      working-directory: ${{ github.workspace }}/.github/
+      shell: bash
